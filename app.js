@@ -24,14 +24,25 @@
 //     }
 // }
 
-function letterFinder(word,match){
-    for(i=0;i<word.length;i++){
-        if(word[i] === match){
-            console.log('Found the', match, 'at', i);
-        }
-        else{
-            console.log('---No match found at', i);
-        }
+// function letterFinder(word,match){
+//     for(i=0;i<word.length;i++){
+//         if(word[i] === match){
+//             console.log('Found the', match, 'at', i);
+//         }
+//         else{
+//             console.log('---No match found at', i);
+//         }
+//     }
+// }
+// letterFinder('test','t');
+
+function addTwoNums(a,b){
+    try{
+        console.log(a+b);
+    }
+    catch(err){
+        console.log(err);
     }
 }
-letterFinder('test','t');
+addTwoNums(5,"5");
+
