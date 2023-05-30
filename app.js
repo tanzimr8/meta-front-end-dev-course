@@ -79,11 +79,35 @@
 
 // var str = "Hello";
 // str.match("jello");
-var score = 100;
-function exampleRecursion(){
-    console.log(score);
-    score = score -10;
-    if(score === 0 ) return;
-    exampleRecursion();
+// var score = 100;
+// function exampleRecursion(){
+//     console.log(score);
+//     score = score -10;
+//     if(score === 0 ) return;
+//     exampleRecursion();
+// }
+// exampleRecursion();
+
+// The functional programming paradigm
+
+function addTwoNums(a,b){
+    console.log(a,b,a+b);
 }
-exampleRecursion();
+
+function randomNum(){
+    return Math.floor(Math.random()*10) + 1;
+}
+function specificNum(){
+    return 42;
+}
+var useRandom = true;
+var getNumber; 
+
+if(useRandom){
+   getNumber = randomNum;
+}
+else{
+    getNumber = specificNum;
+}
+
+addTwoNums(getNumber(),getNumber());
